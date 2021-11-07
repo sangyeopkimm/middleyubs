@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>하늘그린푸드</title>
+       
+    
+<script>
+    if(id==="admin"){
+                if(pw=="1234"){
+                    document.getElementById("login").innerHTML="<h2>" + id + 
+                       "님이 로그인하였습니다 </h2>"; 
+                } else {
+                    alert("비밀번호를 확인하세요");
+                }
+            }else{
+                alert("회원가입을 하세요");
+            }
+        
+</script>
+<style>
+
+
+    header{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        min-width: 0px;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 70px;
+        position: fixed;
+        z-index: 99999;
+        background-color: white;
+        margin: 0 0 5px 0;
+        min-height: 10px;
+        border-bottom: 2px solid gainsboro;
+        display: flex;
+        flex: 1;
+    }
+
+
+.nav,
+.left,
+.right {
+	position: absolute;
+	top: 0;
+	display: flex;
+    flex: 2;
+	height: 70px;
+	align-items: center;
+	background-color: white;
+}
+
+.nav {
+	width: 100%;
+}
+
+.left {
+	left: 200px;
+	align-items: flex-end;
+}
+
+.right {
+	width: 500px;
+	right: 0px;
+	align-items: flex-end;
+}
+.button {
+    width: 100px;
+    font-family: Jua;
+    background-color: whi
+    te;
+    border: none;
+
+    outline: 0;
+    color: rgb(59, 57, 57);
+    padding: 5px 0;
+    text-align: center;
+    display: inline-block;
+    font-size: 22.5px;
+    margin: 4px;
+    cursor: pointer;
+}
+
+.button:hover {
+	color: rgb(204,153,153);
+	border-bottom: 3px solid rgb(204,153,153);
+}
+
+.button_h {
+	font-family: Jua;
+	background-color: white;
+	border: none;
+	outline: 0;
+	color: rgb(73, 65, 65);
+	padding: 5px 0;
+	text-align: center;
+	font-size: 22.5px;
+	margin: 10px 0 0 5px;
+}
+.items {
+	margin: 10px;
+	width: 100px;
+	height: 100px;
+	background-color: orange;
+}
+.sales-section{
+    background-color:rgba(248,236,222,0);
+    margin:0 auto;
+    padding:0 0 0 0;
+    min-width:700px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+h3{
+    padding-top:20px;
+    margin:0;
+}
+.best-product-contanier {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.best-product-contanier > div {
+    border-bottom: 1px solid rgb(202, 197, 197);
+}
+
+.best-product-contanier > h3 {
+    width:100%;
+    text-align: center;
+    margin: 50px 0 30px 0;
+}
+
+.best-product-content {
+    display: inline-block;
+    width: 295px;
+    height: 410px;
+    margin: 10px 10px 10px 10px;
+    position: relative;
+}
+footer{
+	margin : 100px 0 0 0;
+	padding: 0 0 0 0;
+	width:100%;
+	height:200px;
+	background-color:rgb(248,236,222);
+	text-align:center;display: flex;
+}
+footer>p{
+	margin-left:10px;
+	margin-bottom : 3px;
+	margin-top : 3px;
+}
+
+.hover-gray:hover {
+    background-color: rgba(0,0,0,0.4);
+    transition:0.3s;
+}
+
+aside {
+    position: fixed;
+    padding-bottom: 20px;
+    padding-left: 14px;
+	border: 3px solid rgb(190, 188, 186);
+    display: inline;
+    width: 130px;
+    top: 100px;
+}
+
+
+
+.best-product-title{
+    width:100%;
+    text-align:center;
+}
+
+.best-product-content > * {
+    position: absolute;
+}
+
+.best-product-content > img {
+    z-index: -99;
+    width: 100%;
+    height: 380px;
+}
+.best-product-content > .best-product-title {
+    padding-top: 5px;
+    margin: 0px 5px;
+    bottom: 0px;
+    height: 25px;
+    overflow: hidden;
+}
+
+.best-product-content > .best-product-detail {
+    word-break: keep-all;
+    width:214px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin: auto;
+    height: 100%;
+    color: rgba(0,0,0,0);
+    text-align: center;
+}
+
+.best-product-content > .best-product-detail > p:first-child {
+    margin-top: 60px;
+}
+
+.best-product-content > .best-product-detail:hover {
+    transition: 0.3s;
+    color: white;
+}
+.board-table{
+    padding-top:30px;
+    padding-left:50px;
+    width:850px;
+    
+}
+
+.board-table tr:first-child td {
+    border-bottom: 3px solid  rgb(230, 214, 197);
+    border-top: 0;
+}
+.board-table tr td {
+    border-bottom: 2px solid  rgb(230, 214, 197);
+    height: 25px;
+}
+.board-table tr td a {
+    margin-left: 15px;
+    text-decoration:none;
+    color:black;
+}
+.board-table tr:first-child{
+    text-align:center;
+}
+.board-table tr td:first-child {
+    width:10%;
+}
+
+.board-table tr td:nth-child(3) {
+    width: 10%;
+}
+.board-table tr td:nth-child(4) {
+    width: 10%;
+}
+.board-table tr td:last-child {
+    width: 10%;
+}
+.login-section {
+    width: 1100px;
+    min-width: 700px;
+    height: 700px;
+    font-family: 'Noto Sans KR', sans-serif;
+    display: flex;
+    flex: 5;
+
+    
+}
+
+.login-section > h3,
+.login-section h4 {
+    width: 100%;
+    text-align: center;
+}
+
+.login-container-dummy {
+    margin: auto;
+    width: 500px;
+    height: 150px;
+}
+.login-container {
+    background-color: rgba(255,255,255,1);
+    margin: auto;
+    width: 500px;
+    height: 400px;
+}
+
+.login-container-header > h3{
+    width: 100%;
+    text-align: center;
+}
+
+.login-container > *{
+    border:1px solid rgb(202, 197, 197);
+}
+
+.login-container-header{
+    width:100%;
+    height:25%;
+}
+.login-container-section {
+    width: 100%;
+    height: 50%;
+    text-align:center;
+    padding-bottom:10px;
+}
+.login-container-section > * {
+    width: 80%;
+    height: 20%;
+    margin:5px auto;
+    padding:0;
+}
+.login-container-footer {
+    width: 100%;
+    height: 25%;
+    text-align:center;
+}
+
+.loginbtn{
+    font-family: Jua;
+	color: white;
+	background-color: rgba(0,0,0,0.4);
+	border: none;
+	cursor: pointer;
+}
+
+
+
+
+    </style>
+
+
+<header>
+    
+     <div class="nav">
+        <a href="/"> <img src="/myHome/images/freshlogo.jpg" width="180" height="72"></a>
+        <div class="left">
+            <div class="item"><button class="button community-button">인기상품</button></div>
+            <div class="item"><button class="button musicinfo-button">회사소개 </button></div>
+            <div class="item"><button class="button showinfo-button">커뮤니티</button></div>
+            <form name="search-item" class="search-area" method="GET">
+                <input class="search-text" name="search" type="text" />
+                <button type="submit" class="search-button"><img src="/myHome/images/search1.jpg" width="30" height="30"></button>
+            </form>
+        </div>
+       
+    </div>
+    
+  </header>
+  <script>
+    var id = prompt('아이디를 입력해주세요.');
+	var password = null;
+
+	if (id === 'admin') {
+		alert('아이디가 일치 합니다.');
+
+		password = prompt('패스워드를 입력해주세요');
+		if (password === '1234') {
+			alert('로그인이 완료되었습니다. ' + id + '님 환영합니다.');
+		}
+		else{
+			alert('패스워드가 일치하지 않습니다.');
+		}
+
+	}
+	else{
+		alert('아이디가 일치하지 않습니다.');
+	}
+</script>
+  
+<body>
+
+
+
+    <section class="login-section">
+        <div class="login-container-dummy"></div>
+    
+        <div class="login-container">
+            <div class="login-container-header">
+                <h3>SKY FOOD LOGIN</h3>
+            </div>
+            <form name="login" class="login-container-section" method="post">
+                <input name="id" type="text" placeholder="아이디" />
+                <input name="password" placeholder="비밀번호" type="password" />
+                <div id="error-message" class="error"></div>
+                <button class= "loginbtn" type="submit">로그인</button>
+            </form>
+            <div class="login-container-footer">
+                <button class="loginbutton">회원가입</button>
+                <a href=""><button type="button" class="loginbutton" onclick="alert('현재 준비중인 기능입니다. ID/PW찾기는 tkdduq1020@gmail.com으로 문의 주세요.');return false;">ID 찾기</button></a>
+                <a href=""><button type="button" class="loginbutton" onclick="alert('현재 준비중인 기능입니다. ID/PW찾기는 tkdduq1020@gmail.com으로 문의 주세요.'); return false;">PW 찾기</button></a> 
+            </div>
+            
+        </div>
+    
+    <section class="sales-section">
+        <div class="best-product-contanier">
+            <h3>WEEKLY BEST</h3>
+            
+            <div class="best-product-content">
+                <img src="/myHome/images/apple1.jpg" />
+                <div class="best-product-title">과즙이 가득 꿀사과</div>
+                <div class="best-product-detail">
+                    <p>씹음과 동시에 느껴지는 당도높은 사과</p>
+                    <p></p>
+                    <p>￦20,000</p>
+                </div>
+            </div>
+            
+            <div class="best-product-content">
+                <img src="/myHome/images/grape1.jpg" />
+                <div class="best-product-title">농부가 직접 키우는 포도</div>
+                <div class="best-product-detail">
+                    <p>우리아이 영양간식 ,부모님 안주 포도!</p>
+                    <p></p>
+                    <p>￦10,000</p>
+                </div>
+            </div>
+            
+            <div class="best-product-content" >
+                <img src="/myHome/images/strawberry1.jpg "/>
+                <div class="best-product-title">잼,음료등 활용도가 높은 딸기</div>
+                <div class="best-product-detail">
+                    <p>먹기만 해도 기분이 좋아져요</p>
+                    <p></p>
+                    <p>￦30,000</p>
+                </div>
+            </div>
+            
+            </div>
+            
+        </div>
+    
+     
+
+                </div>
+            </div>
+            
+        </div>
+        
+        <section class="board-section">
+    <div class=bheader>
+        <h3> 주요 공지 </h3>
+    </div>
+    <table class="board-table">
+        <tr>
+            <td>
+                <a>글 번호</a>
+            </td>
+            <td>
+                <a>제목</a>
+            </td>
+            <td>
+                <a>작성자</a>
+            </td>
+            <td>
+                <a>작성일</a>
+            </td>
+            <td>
+                <a>조회수</a>
+            </td>
+        </tr>
+        
+    </table>
+    <section class="board-section">
+        <div class=bheader>
+            <h3> 이벤트 </h3>
+        </div>
+        <table class="board-table">
+            <tr>
+                <td>
+                    <a>글 번호</a>
+                </td>
+                <td>
+                    <a>제목</a>
+                </td>
+                <td>
+                    <a>작성자</a>
+                </td>
+                <td>
+                    <a>작성일</a>
+                </td>
+                <td>
+                    <a>조회수</a>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a>3</a>
+                </td>
+                <td>
+                  [Who&#39;s Next?] 하늘그린푸드의 이벤트 결과발표r</a>
+                </td>
+                <td>
+                    <a>김상엽</a>
+                </td>
+                <td>
+                    <a>11-7</a>
+                </td>
+                <td>
+                    <a>100</a>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a>2</a>
+                </td>
+                <td>
+                    [SALE EVENT] 50%까지 파격 세일!</a>
+                </td>
+                <td>
+                    <a>김상엽</a>
+                </td>
+                <td>
+                    <a>11-7</a>
+                </td>
+                <td>
+                    <a>36</a>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a>1</a>
+                </td>
+                <td>
+                    [OPEN EVENT] 하늘그린푸드 오픈 이벤트</a>
+                </td>
+                <td>
+                    <a>김상엽</a>
+                </td>
+                <td>
+                    <a>11-7</a>
+                </td>
+                <td>
+                    <a>40999</a>
+                </td>
+            </tr>
+            
+     </table>
+     <h3>위치</h3>
+   <img class="map" src="/myHome/images/map1.jpg" alt="map">
+   <p>토성역 2번출구에 내려 도보로 10분 정도 걸으시면 건물이 보입니다</p>
+ 
+  
+    </section>
+    
+ 
+
+    
+    <footer>
+        <br>
+        <br>
+        <p>웹 프로그래밍 중간대체과제</p>
+        <p>ⓒ 2021. Sangyeop All Rights Reserved.</p>
+        
+      
+            <h5>문의,연락</h5>
+            <ul>
+              <li>전화번호: 010 5480 4794</li>
+              <li>Email: <a href="mailto:tkdduq1020@naver.com" title="Email">tkdduq1020@naver.com</a></li>
+            </ul>
+            
+        </div>
+    </footer>
+
+
+
+
+    
+</body>
+</html>
+ 
